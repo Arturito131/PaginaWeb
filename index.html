@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Página web </title>
+    
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+
+  <body>
+    
+<header>
+      <header id="main-header">
+        
+        <a id="logo-header" href="#">
+            <img src="https://img1.wsimg.com/isteam/ip/b36e9f8a-b48a-4c4f-9f3f-5d9ebc544078/logo/e78fd787-921f-4502-a794-6f154dfee1ae.png/:/rs=h:160/qt=q:95" class="logo-img" width="420" height="90">
+        </a> <!-- / #logo-header -->
+
+        <nav>
+            <ul>
+                <li><a href=""><h3>Inicio</h3></a></li>
+                <li><a href=""><h3>Nosotros</h3></a></li>
+                <li><a href=""><h3>Servicios</h3></a></li> 
+                <li><a href=""></a></li>
+                <li><a href="#contacto"><h3>Inicias Sesíón</h3></a></li> 
+                <li><a href=""><i class="fas fa-search"></i></a></li> 
+            </ul>     
+        </nav><!-- / nav -->
+      </header><!-- / #main-header -->
+
+<header class="hero">
+           
+            <div class="textos-hero">
+            <h1>Bienvenido a Website</h1>
+            <p>Inicia Sesion </p>
+            <div class="contenedor">
+            <button id="btn-abrir-popup" class="btn-abrir-popup">CONTPAQ i</button>
+            <br>
+             </div>
+            </div>
+
+
+                    <div class="overlay" id="overlay">
+            <div class="popup" id="popup">
+                <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+
+                 <div class="contenedor__todo">
+                <div class="caja__trasera">
+                    <div class="caja__trasera-login">
+                        <h3>¿Ya tienes una cuenta?</h3>
+                        <p>Inicia sesión para entrar en la página</p>
+                        <button id="btn__iniciar-sesion">Iniciar Sesión</button>
+                    </div>
+                    <div class="caja__trasera-register">
+                        <h3>¿Aún no tienes una cuenta?</h3>
+                        <p>Regístrate para que puedas iniciar sesión</p>
+                        <button id="btn__registrarse">Regístrarse</button>
+
+
+                    </div>
+                </div>
+
+                <!--Formulario de Login y registro-->
+                <div class="contenedor__login-register">
+                    <!--Login-->
+                    <form action="php/Login.php" method="POST" class="formulario__login">
+                        <h2>Iniciar Sesión</h2>
+                        <input type="text" placeholder="Correo Electronico" name="correo">
+                        <input type="password" placeholder="Contraseña" name="clave">
+                        <button>Entrar</button>
+                    </form>
+
+                    <!--Register-->
+                    <form action="php/registro.php" method="POST" class="formulario__register">
+                        <h2>Regístrarse</h2>
+                        <input type="text" placeholder="Nombre" name="nombre_completo">
+                        <input type="text" placeholder="Correo Electronico" name="correo">
+                        <input type="text" placeholder="Usuario" name="usuario">
+                        <input type="password" placeholder="Contraseña" name="clave">
+                        <button>Regístrarse</button>
+                    </form>
+                </div>
+            </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="js/popup.js"></script>
+    <script src="js/script.js"></script>
+
+
+        <div class="svg-hero" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: #fff;"></path>
+            </svg></div>
+          </header>
+
+
+
+    </header>
+
+
+
+
+
+
+   
+  </body>
+
+</html>
